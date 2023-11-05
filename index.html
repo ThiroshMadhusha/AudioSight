@@ -8,7 +8,7 @@
   <title>AudioSight</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <link rel="stylesheet" href="assets/css/videoslider.css">
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -39,7 +39,7 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">audiosight@gmail.com</a>
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">audiosightofficial@gmail.com</a>
         <i class="bi bi-phone"></i> +94 775338747
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
@@ -77,14 +77,52 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <br><br>
-      <h1>Welcome to The Audio Sight</h1>
-      <h2>Mobile Base Sinhala Book Reader For Visually Impaired Individuals</h2>
-      <button class="btn-get-started">Download now</button>
+  <section1 id="hero" class="home">
+    <video class="video-slide active" src="assets/videos/1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="assets/videos/2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="assets/videos/4.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="assets/videos/3.mp4" autoplay muted loop></video>
+    <div class="content">
+        <h1>Welcome To The <span>Audio Sight</span></h1>
+        <p>Mobile Base Sinhala Book Reader For Visually Impaired Individuals</p>
+        <a href="#about">Read More</a>
     </div>
-  </section><!-- End Hero -->
+    <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation" style="pointer-events: none;">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section1>
+
+<script type="text/javascript">
+    const slides = document.querySelectorAll(".video-slide");
+    let currentSlide = 0;
+
+    // Function to change the active slide
+    function changeSlide() {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("active");
+    }
+
+    // Set an interval to automatically change the slide every 5 seconds
+    const interval = setInterval(changeSlide, 4000);
+</script>
+
+
+
+<!-- End Hero -->
 
   <main id="main">
 
@@ -529,7 +567,7 @@
                     <p><h4>
                       Click Here to View the Project Charter Document</h4>
                      </p>
-                     <p><h4><a href="https://drive.google.com/file/d/1B_kuimyodJ_MetQiJ3IetJRx_TuRMAeg/view?usp=sharing" target="_blank"> 2023-198_Project_Charter</a></h4></p>
+                     <p><h4><a href="https://drive.google.com/file/d/1B_kuimyodJ_MetQiJ3IetJRx_TuRMAeg/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> 2023-198_Project_Charter</a></h4></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
@@ -543,10 +581,10 @@
                     <p>
                       <h4>Access the Individual Proposal Documents Using Following Links</h4>
                     </p>
-                    <p><h4><a href="https://drive.google.com/file/d/1Gtwtln2ixwI0YubT5L7pGSf9OBLu4omZ/view?usp=sharing" target="_blank"> IT20146238_Jayathunga T.M.<a></h4></p>
-                    <p><h4><a href="https://drive.google.com/file/d/13qvBdUWqUJlB8bekxXtEqyIw89mujrfN/view?usp=sharing" target="_blank"> IT20241346_Semini J.P.D.L.</a></h4></p>
-                    <p><h4><a href="https://drive.google.com/file/d/1qLYGQOcs_K6P8T-6n3KGxJKCFZxcb8WI/view?usp=sharing" target="_blank"> IT20129712_Godakanda P.G.S.</a></h4></p>
-                    <p><h4><a href="https://drive.google.com/file/d/1KdWjQK0ucgCI9Cq0vZLSlizq62J9r5RC/view?usp=sharing" target="_blank"> IT20254520_Bhagya H.D.M.</a></h4></p>
+                    <p><h4><a href="https://drive.google.com/file/d/1Gtwtln2ixwI0YubT5L7pGSf9OBLu4omZ/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20146238_Jayathunga T.M.<a></h4></p>
+                    <p><h4><a href="https://drive.google.com/file/d/13qvBdUWqUJlB8bekxXtEqyIw89mujrfN/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20241346_Semini J.P.D.L.</a></h4></p>
+                    <p><h4><a href="https://drive.google.com/file/d/1qLYGQOcs_K6P8T-6n3KGxJKCFZxcb8WI/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20129712_Godakanda P.G.S.</a></h4></p>
+                    <p><h4><a href="https://drive.google.com/file/d/1KdWjQK0ucgCI9Cq0vZLSlizq62J9r5RC/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20254520_Bhagya H.D.M.</a></h4></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/" alt="" class="img-fluid">
@@ -560,10 +598,10 @@
                     <p><h4>
                       Access the Research Logbook Documents Using Following Links</h4>
                     </p>
-                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"> IT20146238_Jayathunga T.M.<a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/18ynkCMv4rTcvY6GAAzwRD_TBbvvYw1OH/view?usp=sharing" target="_blank"> IT20241346_Semini J.P.D.L.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"> IT20129712_Godakanda P.G.S.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"> IT20254520_Bhagya H.D.M.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20146238_Jayathunga T.M.<a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/18ynkCMv4rTcvY6GAAzwRD_TBbvvYw1OH/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20241346_Semini J.P.D.L.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20129712_Godakanda P.G.S.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1XOKtRD6YcHgq7LyRXTtk7CuvQXs1yPeW/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20254520_Bhagya H.D.M.</a></h4></p>
                     </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/" alt="" class="img-fluid">
@@ -577,10 +615,10 @@
                     <p><h4>
                       Access Status Document_I Using Following Links</h4>
                     </p>
-                      <p><h4><a href="https://drive.google.com/file/d/1eEQivU6htfRpm5t89nTvipkCeK1j79Gs/view?usp=sharing" target="_blank"> IT20146238_Jayathunga T.M.<a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1Z0pTpK2ikwkNDmSWDcO2ukonj0JnurF7/view?usp=sharing" target="_blank"> IT20241346_Semini J.P.D.L.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1ANG0NBLWySOwdVtgYyjYXkK0ZAT-HVnN/view?usp=sharing" target="_blank"> IT20129712_Godakanda P.G.S.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1SH-UDONJnIxZdxjXsXq7iR6kkRqfxKTt/view?usp=sharing" target="_blank"> IT20254520_Bhagya H.D.M.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1eEQivU6htfRpm5t89nTvipkCeK1j79Gs/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20146238_Jayathunga T.M.<a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1Z0pTpK2ikwkNDmSWDcO2ukonj0JnurF7/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20241346_Semini J.P.D.L.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1ANG0NBLWySOwdVtgYyjYXkK0ZAT-HVnN/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20129712_Godakanda P.G.S.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1SH-UDONJnIxZdxjXsXq7iR6kkRqfxKTt/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20254520_Bhagya H.D.M.</a></h4></p>
                     </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/" alt="" class="img-fluid">
@@ -594,10 +632,10 @@
                     <p><h4>
                       Access Status Document_II Using Following Links</h4>
                     </p>
-                      <p><h4><a href="https://drive.google.com/file/d/1VoFBdSQdn8loSQEmYwrBGokV4r2DiT2P/view?usp=sharing" target="_blank"> IT20146238_Jayathunga T.M.<a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1KUtKEQEm8FJL8Ai8w53qV58YKD6JJiVg/view?usp=sharing" target="_blank"> IT20241346_Semini J.P.D.L.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1VoFBdSQdn8loSQEmYwrBGokV4r2DiT2P/view?usp=sharing" target="_blank"> IT20129712_Godakanda P.G.S.</a></h4></p>
-                      <p><h4><a href="https://drive.google.com/file/d/1eIiLMa5X4Gn0nmX9L8KA7VUbHHc4CDtg/view?usp=sharing" target="_blank"> IT20254520_Bhagya H.D.M.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1VoFBdSQdn8loSQEmYwrBGokV4r2DiT2P/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20146238_Jayathunga T.M.<a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1KUtKEQEm8FJL8Ai8w53qV58YKD6JJiVg/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20241346_Semini J.P.D.L.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1VoFBdSQdn8loSQEmYwrBGokV4r2DiT2P/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20129712_Godakanda P.G.S.</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1eIiLMa5X4Gn0nmX9L8KA7VUbHHc4CDtg/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20254520_Bhagya H.D.M.</a></h4></p>
                     </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/" alt="" class="img-fluid">
@@ -611,14 +649,14 @@
                     <p><h4>
                       Access the Final Group Report Using Following Link</h4>
                     </p>
-                      <p><h4><a href="https://drive.google.com/file/d/127hoDY_LnJuG0VD14-70LIynoZhOGfP6/view?usp=sharing" target="_blank"> 2023-198_Group_Report</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/127hoDY_LnJuG0VD14-70LIynoZhOGfP6/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> 2023-198_Group_Report</a></h4></p>
                         <p><h4>
                           Access the Individual Final Reports Using Following Links</h4>
                         </p>
-                          <p><h4><a href="https://drive.google.com/file/d/1ClXxGAbcCxsl7dTqONWLj0BjavqMw466/view?usp=sharing" target="_blank"> IT20146238_Jayathunga T.M.<a></h4></p>
-                          <p><h4><a href="https://drive.google.com/file/d/1qd4m5b281dvw4VxVSq_WUUP7qeLsbtU9/view?usp=sharing" target="_blank"> IT20241346_Semini J.P.D.L.</a></h4></p>
-                          <p><h4><a href="https://drive.google.com/file/d/1ClXxGAbcCxsl7dTqONWLj0BjavqMw466/view?usp=sharing" target="_blank"> IT20129712_Godakanda P.G.S.</a></h4></p>
-                          <p><h4><a href="https://drive.google.com/file/d/16MPkptJzgmZrLKhhRgyxskirtBtjNbl8/view?usp=sharing" target="_blank"> IT20254520_Bhagya H.D.M.</a></h4></p>
+                          <p><h4><a href="https://drive.google.com/file/d/1ClXxGAbcCxsl7dTqONWLj0BjavqMw466/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20146238_Jayathunga T.M.<a></h4></p>
+                          <p><h4><a href="https://drive.google.com/file/d/1qd4m5b281dvw4VxVSq_WUUP7qeLsbtU9/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20241346_Semini J.P.D.L.</a></h4></p>
+                          <p><h4><a href="https://drive.google.com/file/d/1ClXxGAbcCxsl7dTqONWLj0BjavqMw466/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20129712_Godakanda P.G.S.</a></h4></p>
+                          <p><h4><a href="https://drive.google.com/file/d/16MPkptJzgmZrLKhhRgyxskirtBtjNbl8/view?usp=sharing" target="_blank"><i class='bx bxs-hand-right'></i> IT20254520_Bhagya H.D.M.</a></h4></p>
                     </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/" alt="" class="img-fluid">
@@ -650,25 +688,25 @@
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4 class="title"><a href="https://docs.google.com/presentation/d/1kJ52o5IJa5fPPbAYUGj94oBzkFfh-1j_/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank">Proposal Presentation</a></h4>
+              <h4 class="title"><a href="https://docs.google.com/presentation/d/1kJ52o5IJa5fPPbAYUGj94oBzkFfh-1j_/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank"><i class='bx bxs-hand-right'></i> Proposal Presentation</a></h4>
               <p class="description">Click to View the Proposal Presentation</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4 class="title"><a href="https://docs.google.com/presentation/d/19aCqz5B-_S92o-WBgt5OMZghjG8prHTF/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank">Progress Presentation I</a></h4>
+              <h4 class="title"><a href="https://docs.google.com/presentation/d/19aCqz5B-_S92o-WBgt5OMZghjG8prHTF/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank"><i class='bx bxs-hand-right'></i> Progress Presentation I</a></h4>
               <p class="description">Click to View the Progress Presentation I - 50% Completion</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4 class="title"><a href="https://docs.google.com/presentation/d/11HCjAQovPsHxu8XpAnbsG7d-VivOoRXk/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank">Progress Presentation II</a></h4>
+              <h4 class="title"><a href="https://docs.google.com/presentation/d/11HCjAQovPsHxu8XpAnbsG7d-VivOoRXk/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank"><i class='bx bxs-hand-right'></i> Progress Presentation II</a></h4>
               <p class="description">Click to View the Progress Presentation II - 90% Completion</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4 class="title"><a href="https://docs.google.com/presentation/d/1c3-0HY_1hUnvwbUfc0HBy0mBOJ8WVkJi/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank">Final Presentation</a></h4>
+              <h4 class="title"><a href="https://docs.google.com/presentation/d/1c3-0HY_1hUnvwbUfc0HBy0mBOJ8WVkJi/edit?usp=sharing&ouid=116023111303352942051&rtpof=true&sd=true" target="_blank"><i class='bx bxs-hand-right'></i> Final Presentation</a></h4>
               <p class="description">Click to View the Final Presentation- 100% Completion</p>
             </div>
 
@@ -690,7 +728,7 @@
         </div>
         <div class="col-lg-12">
           <div class="row">
-            <img src="assets/img/2022-172.png">
+            <img src="assets/img/2023-198-Poster.jpg">
           </div>
         </div>
       </div>
@@ -743,6 +781,7 @@
             </div>
           </div>
 
+          
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="assets/img/team/member.jpg" class="img-fluid" alt=""></div>
@@ -781,7 +820,7 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/member2.PNG" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/member1.PNG" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Godakanda P.G.S.</h4>
                 <span>TEAM MEMBER</span>
@@ -848,7 +887,7 @@
                     <div class="info">
                       <i class="bi bi-envelope"></i>
                       <h4>Email:</h4>
-                      <p>audiosight@gmail.com</p>
+                      <p>audiosightofficial@gmail.com</p>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -882,7 +921,7 @@
               New Kandy Rd,
               Malabe, SriLanka <br><br>
               <strong>Phone:</strong> +94 77 5338 747<br>
-              <strong>Email:</strong> audiosight@gmail.com<br>
+              <strong>Email:</strong> audiosightofficial@gmail.com<br>
             </p>
           </div>
 
