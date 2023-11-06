@@ -1268,8 +1268,8 @@ section {
 @media (max-width: 992px) {
   .ourteam .member .pic {
     overflow: hidden;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 100px;
     border-radius: 50%;
   }
 
