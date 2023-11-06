@@ -1209,6 +1209,13 @@ section {
   font-weight: 500;
 }
 
+.ourteam .member span1 {
+  display: block;
+  font-size: 9px;
+  position: relative;
+  font-weight: 500;
+}
+
 .ourteam .member span::after {
   content: "";
   position: absolute;
@@ -1222,8 +1229,9 @@ section {
 
 .ourteam .member p {
   margin: 10px 0 0 0;
-  font-size: 14px;
+  font-size: 12px;
 }
+
 
 .ourteam .member .social {
   margin-top: 12px;
