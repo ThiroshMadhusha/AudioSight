@@ -37,7 +37,7 @@ section1{
 .home .content{
     z-index: 888;
     color: #fff;
-    width: 70%;
+    width: 80%;
     margin-top: 50px;
 }
 
@@ -51,7 +51,7 @@ section1{
 }
 
 .home .content h1 span{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
 }
 
