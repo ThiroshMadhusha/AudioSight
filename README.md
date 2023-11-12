@@ -1,3 +1,3 @@
-# AudioSight
+# Audio Sight
 
-``Click Here : `` https://thiroshmadhusha.github.io/AudioSight/
+``Click Here: `` https://thiroshmadhusha.github.io/AudioSight/
